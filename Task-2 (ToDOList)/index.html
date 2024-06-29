@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="todolist.png" type="image/x-icon">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h1>Save your Works</h1>
+            <form id="todo-form">
+                <input type="text" id="task-input" placeholder="Enter a new task" required>
+                <input type="date" id="due-date" placeholder="Due date">
+                <select id="priority">
+                    <option value="" disabled selected>Choose priority</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <div id="category-input">
+                    <select id="category">
+                        <option value="" disabled selected>Choose category</option>
+                        <option value="personal">Personal</option>
+                        <option value="school">School</option>
+                        <option value="college">College</option>
+                        <option value="home">Home</option>
+                        <option value="professional">Professional</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <input type="text" id="other-category" placeholder="Enter category" style="display: none;">
+                </div>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+        <div class="right-panel">
+            <div class="filter-container">
+                <div>
+                    <label for="task-filter-category">Filter by category:</label>
+                    <select id="task-filter-category">
+                        <option value="" disabled>Filters</option>
+                        <option value="all" selected>All</option>
+                        <option value="personal">Personal</option>
+                        <option value="school">School</option>
+                        <option value="college">College</option>
+                        <option value="home">Home</option>
+                        <option value="professional">Professional</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="task-filter-priority">Filter by priority:</label>
+                    <select id="task-filter-priority">
+                        <option value="all" selected>All</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Task Search -->
+            <div>
+                <label for="task-search">Search tasks:</label>
+                <input type="text" id="task-search" placeholder="Search tasks">
+            </div>
+
+            <!-- Task List -->
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
