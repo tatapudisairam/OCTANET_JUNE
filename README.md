@@ -12,9 +12,4 @@ This project is a **Landing Page** for an online learning platform, designed wit
 ### 2. To-Do List
 This project is a **To-Do List** application that allows users to add, delete, and mark tasks as completed. It is built with a simple and user-friendly interface to manage tasks efficiently. [Live](https://s-todolist-16.netlify.app/)
 
----
-
-## Folder Structure
-
-Here is the folder structure for the **OCTANET** repository:
 
